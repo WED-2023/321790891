@@ -10,6 +10,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+	background-color: white;
 }
 
 header {
@@ -96,4 +97,15 @@ form button:hover {
 
 #facebook-like-button {
     margin-top: 20px;
+}
+
+.photo-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+.photo-row img {
+    width: 23%; /* Adjust width to fit 4 images in a row */
+    height: auto; /* Maintain aspect ratio */
 }
