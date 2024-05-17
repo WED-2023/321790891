@@ -21,8 +21,80 @@
         </ul>
     </div>
 </header>
-		  
-<section id="about" class="section">
+
+<main>
+  <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>A brief description of the adult - history, resume, hobbies, areas of interest, a character who influenced him/her during his/her life, etc.</p>
+  </section>
+
+  <section id="photos" class="section">
+      <h2>My Photos</h2>
+      <img src="photo1.jpg" alt="Photo 1">
+      <img src="photo2.jpg" alt="Photo 2">
+  </section>
+
+  <section id="playlist" class="section">
+      <h2>My Playlist</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section id="like" class="section">
+      <h2>Like</h2>
+      <button id="like-button">Like</button>
+      <div id="facebook-like-button">
+          <!-- Facebook like button code -->
+      </div>
+  </section>
+
+  <section id="qrcoder" class="section">
+      <h2>QR Code</h2>
+      <img src="qr-code.png" alt="QR Code">
+  </section>
+
+  <section id="spa" class="section">
+      <h2>Q&A</h2>
+      <h3>1. List three main differences between web1, web2 and web3</h3>
+      <p>Answer...</p>
+      <h3>2. Explain the differences mentioned in question 1 by an example of a use case</h3>
+      <p>Answer...</p>
+  </section>
+
+  <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <label for="smiley">Choose a Smiley:</label>
+          <select id="smiley" name="smiley">
+              <option value="happy">😊</option>
+              <option value="sad">😢</option>
+              <option value="neutral">😐</option>
+          </select>
+          <button type="submit">Send</button>
+      </form>
+  </section>
+</main>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+      $("#menu a").click(function(e) {
+          e.preventDefault();
+          $('html, body').animate({
+              scrollTop: $($(this).attr('href')).offset().top
+          }, 1000);
+      });
+  });
+
+  $(document).scroll(function() {
+      $('#menu').toggle($(this).scrollTop() > 100);
+  });
+</script>
+</body>
+</html>
+<!-- <section id="about" class="section">
 <br/>
 <br/>
 <br/>
@@ -198,4 +270,4 @@ $(function(){
  });​
  </script>
 </body>
-</html>
+</html> -->
