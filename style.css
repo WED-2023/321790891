@@ -102,10 +102,12 @@ form button:hover {
 .photo-row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px; /* Adjust spacing as needed */
+    margin-bottom: 10px; 
 }
 
 .photo-row img {
-    width: 23%; /* Adjust width to fit 4 images in a row */
-    height: auto; /* Maintain aspect ratio */
+    width: 23%; 
+	height: 200px; 
+    object-fit: cover; 
+    object-position: center; 
 }
