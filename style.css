@@ -24,8 +24,8 @@ header {
 }
 
 #logo{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
 
 #menu div {
@@ -38,7 +38,8 @@ header {
     padding: 0;
     display: flex;
     justify-content: space-around;
-    background: cornflowerblue;
+    align-items: center;
+    background: lightcoral;
     /* padding: 10px 0; */
 }
 
