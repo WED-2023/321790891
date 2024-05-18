@@ -111,7 +111,7 @@ form button:hover {
 }
 
 .photo-row img {
-    width: 23%; 
-	height: 300px; 
-    object-fit: contain; 
+    width: 20%; 
+	height: 250px; 
+    object-fit: cover; 
 }
