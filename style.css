@@ -112,6 +112,6 @@ form button:hover {
 
 .photo-row img {
     width: 23%; 
-	height: 400px; 
+	height: 350px; 
     object-fit: cover; 
 }
