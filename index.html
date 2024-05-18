@@ -132,7 +132,7 @@
         var smiley = document.getElementById("smiley").value;
 
         // Compose email body
-        var emailBody = "Message: " + message + "\nSmiley: " + smiley;
+        var emailBody = message + "\n" + smiley;
 
         // Create mailto link with customized body
         var mailtoLink = "mailto:" + email + "?body=" + encodeURIComponent(emailBody);
