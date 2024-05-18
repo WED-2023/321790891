@@ -58,7 +58,7 @@
 
   <section id="like" class="section">
       <h2>Like</h2>
-      <p>new</p>
+      <p>new2</p>
       <div id="facebook-like-button">
         <div class="fb-like" data-href="https://wed-2023.github.io/321790891/" data-width="20" data-layout="standard " data-action="like" data-size="small" data-share="false"></div>
       </div>
@@ -88,7 +88,7 @@
     </ul>
 </section>
 
-  <section id="contact" class="section">
+  <!-- <section id="contact" class="section">
       <h2>Contact Me</h2>
       <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
           <label for="email">Your Email:</label>
@@ -103,7 +103,44 @@
           </select>
           <button type="submit">Send</button>
       </form>
-  </section>
+  </section> -->
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <label for="smiley">Choose a Smiley:</label>
+        <select id="smiley" name="smiley">
+            <option value="😊">😊</option>
+            <option value="😢">😢</option>
+            <option value="😐">😐</option>
+        </select>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+        
+        // Get form values
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+        var smiley = document.getElementById("smiley").value;
+
+        // Compose email body
+        var emailBody = "Message: " + message + "\nSmiley: " + smiley;
+
+        // Create mailto link with customized body
+        var mailtoLink = "mailto:" + email + "?body=" + encodeURIComponent(emailBody);
+
+        // Open mail client with pre-filled email
+        window.location.href = mailtoLink;
+    });
+</script>
 </main>
 
 <script type="text/javascript">
@@ -116,9 +153,9 @@
       });
   });
 
-  $(document).scroll(function() {
-      $('#menu').toggle($(this).scrollTop() > 100);
-  });
+//   $(document).scroll(function() {
+//       $('#menu').toggle($(this).scrollTop() > 100);
+//   });
 </script>
 </body>
 </html>
