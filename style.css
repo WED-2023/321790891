@@ -65,40 +65,40 @@ h2 {
     text-decoration: underline;
 }
 
-.about-content {
+/* .about-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px; /* Add some space between the text and the photo */
+    gap: 20px;
     margin-top: 20px;
   }
   
-  .about-text {
-    flex: 1; /* Make the text take up available space */
-  }
+.about-text {
+    flex: 1; 
+}
   
-  .about-photo {
-    flex-shrink: 0; /* Prevent the photo from shrinking */
-    border: 5px solid #ccc; /* Add a border around the photo */
-    border-radius: 10px; /* Add rounded corners */
-    overflow: hidden; /* Ensure the image fits within the rounded corners */
-    max-width: 250px; /* Limit the width of the photo */
-    max-height: 250px; /* Limit the height of the photo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
-  }
+.about-photo {
+    flex-shrink: 0; 
+    border: 5px solid #ccc;
+    border-radius: 10px; 
+    overflow: hidden; 
+    max-width: 250px; 
+    max-height: 250px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
   
-  .about-photo img {
-    width: 100%; /* Make the image fill the container */
-    height: auto; /* Maintain aspect ratio */
-  }
+.about-photo img {
+    width: 100%; 
+    height: auto;
+}
   
-  .about-photo:hover {
-    transform: scale(1.05); /* Slightly enlarge the photo on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
-  }
+.about-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
   
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .about-content {
       flex-direction: column;
       align-items: center;
@@ -108,7 +108,7 @@ h2 {
       max-width: 100%;
       text-align: center;
     }
-  }
+} */
 /* .photo-gallery {
     padding: 60px 20px;
 }
@@ -154,14 +154,10 @@ img {
 	text-align: center;
 	display: -webkit-flex;
 	display: flex;
-	width: 850px;
-	height: 400px;
+	width: 750px;
+	height: 350px;
 	margin: auto;
-	position: relative;
-    border: 2px solid #ccc; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    background: #fff; 
-    border-radius: 10px; 
+
 
 
 }
