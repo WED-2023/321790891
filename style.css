@@ -12,6 +12,8 @@ body {
     padding: 0;
 	background-color: white;
     padding-top: 60px; 
+    font-size: 18px; 
+    text-align: center; 
 }
 
 header {
@@ -55,10 +57,14 @@ header {
 
 .section {
     padding: 80px 20px;
+    text-align: center;
 }
 
 h2 {
     margin-top: 0;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline;
 }
 
 img {
@@ -69,6 +75,7 @@ img {
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 form label {
@@ -86,24 +93,24 @@ form input, form textarea, form select {
 form button {
     margin-top: 20px;
     padding: 10px;
-    background: lightblue;
+    background: lightcoral;
     border: none;
     cursor: pointer;
 }
 
 form button:hover {
-    background: deepskyblue;
+    background: coral;
 }
 
 #like-button {
     padding: 10px 20px;
-    background: lightblue;
+    background: lightcoral;
     border: none;
     cursor: pointer;
 }
 
 #like-button:hover {
-    background: deepskyblue;
+    background: coral;
 }
 
 #facebook-like-button {
