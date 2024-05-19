@@ -58,12 +58,35 @@ header {
     text-align: center;
 }
 
+/* h2 {
+    margin-top: 0;
+    font-size: 3em;
+    text-align: center;
+    color: lightcoral;
+    font-weight: bold;
+} */
+
 h2 {
     margin-top: 0;
     font-size: 3em;
     text-align: center;
     color: lightcoral;
     font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px; /* Add padding for some breathing room */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    transform: translateY(-20px); /* Move headline up slightly for a floating effect */
+    transition: transform 0.3s ease; /* Smooth transition for the floating effect */
+
+    /* Hover effect */
+    transition: background-color 0.3s ease;
+}
+
+h2:hover {
+    background-color: lightcoral; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    transform: translateY(-15px); /* Adjust floating effect on hover */
 }
 
 .about-content {
