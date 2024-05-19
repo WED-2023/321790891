@@ -109,6 +109,7 @@ form button {
 
 form button:hover {
     background: lightpink;
+    color: white;
 }
 
 #like-button {
@@ -123,7 +124,7 @@ form button:hover {
 }
 
 #facebook-like-button {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .photo-row {
