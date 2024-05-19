@@ -75,22 +75,25 @@ h2 {
   
 .about-text {
     flex: 1; 
+    text-align: right;
 }
   
 .about-photo {
     flex-shrink: 0; 
     border: 5px solid #ccc;
-    border-radius: 10px; 
+    border-radius: 50%; 
     overflow: hidden; 
-    max-width: 250px; 
-    max-height: 250px; 
+    max-width: 300px; 
+    max-height: 300px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s, box-shadow 0.3s; 
 }
   
 .about-photo img {
     width: 100%; 
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
   
 .about-photo:hover {
@@ -152,8 +155,6 @@ h2 {
 	height: 350px;
 	margin: auto;
     position: relative;
-
-
 }
 
 .mySlides {
@@ -165,12 +166,12 @@ h2 {
 	width: 610px;
 	height: 340px;
 	border-radius: 5%;
+    object-fit: cover;
 
 }
 .slideshow-container img:hover, .flex img:hover, .likesection img:hover {
 	transform: scale(1.05, 1.05);
 	opacity: 0.9;
-
 }
 
 
