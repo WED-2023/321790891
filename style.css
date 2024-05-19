@@ -7,10 +7,6 @@ body {
     font-size: 18px; 
     text-align: center; 
     line-height: 1.6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 header {
@@ -69,6 +65,50 @@ h2 {
     text-decoration: underline;
 }
 
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Add some space between the text and the photo */
+    margin-top: 20px;
+  }
+  
+  .about-text {
+    flex: 1; /* Make the text take up available space */
+  }
+  
+  .about-photo {
+    flex-shrink: 0; /* Prevent the photo from shrinking */
+    border: 5px solid #ccc; /* Add a border around the photo */
+    border-radius: 10px; /* Add rounded corners */
+    overflow: hidden; /* Ensure the image fits within the rounded corners */
+    max-width: 250px; /* Limit the width of the photo */
+    max-height: 250px; /* Limit the height of the photo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .about-photo img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .about-photo:hover {
+    transform: scale(1.05); /* Slightly enlarge the photo on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-text, .about-photo {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
 /* .photo-gallery {
     padding: 60px 20px;
 }
