@@ -62,8 +62,7 @@ h2 {
     margin-top: 0;
     font-size: 3em;
     text-align: center;
-    border-bottom: 2px solid lightcoral;
-    color: white; /* Text color */
+    color: lightcoral;
     font-weight: bold;
 }
 
@@ -99,7 +98,6 @@ h2 {
   
 .about-photo:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     border-radius: 50%;
 }
   
