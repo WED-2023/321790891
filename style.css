@@ -7,6 +7,10 @@ body {
     font-size: 18px; 
     text-align: center; 
     line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 header {
@@ -114,7 +118,10 @@ img {
 	height: 400px;
 	margin: auto;
 	position: relative;
-
+    border: 2px solid #ccc; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background: #fff; 
+    border-radius: 10px; 
 
 
 }
@@ -125,8 +132,8 @@ img {
 }
 .slideshow-container img{
 	opacity: 0.8;
-	width: 610px;
-	height: 340px;
+    width: 100%; 
+    height: auto; 
 	border-radius: 5%;
 
 }
@@ -152,7 +159,6 @@ img {
 	margin-top: auto;
 	margin-bottom: auto;
 	padding: 20px;
-    background-color: lightcoral;
 
 }
 
