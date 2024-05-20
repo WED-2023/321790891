@@ -177,8 +177,8 @@ h2 {
 }
 .slideshow-container img{
 	opacity: 0.8;
-	width: 650px;
-	height: 340px;
+	width: 600px;
+	height: 300px;
 	border-radius: 5%;
     object-fit:cover;
 
@@ -224,6 +224,35 @@ h2 {
 	background-color: #b2b2b2;
 	transform: scale(1.1, 1.1);
 
+}
+
+#like-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#like-button {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 18px;
+    padding: 10px 20px;
+    background: lightcoral;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#like-button:hover {
+    background-color: darkred;
+}
+
+#like-counter {
+    display: inline-block;
+    font-size: 1.5em;
+    margin-left: 10px;
+    vertical-align: middle;
+    color: #555;
 }
 
 form {
