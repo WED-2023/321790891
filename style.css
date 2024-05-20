@@ -282,7 +282,7 @@ form input, form textarea, form select {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 500x;
+    max-width: 450x;
     margin-top: 20px;
 }
 
