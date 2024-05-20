@@ -143,14 +143,14 @@ h2 {
 	display: flex;
 	width: 800px;
 	height: 450px;
-	margin: 20px 0;
+	margin: auto;
     object-position: center;
 }
 
 .mySlides {
-
 	display: none;
 }
+
 .slideshow-container img{
 	opacity: 0.8;
 	width: 700px;
@@ -321,7 +321,7 @@ form input, form textarea, form select {
     background: linear-gradient(135deg, #f5f7fa 0%, #e699a6 100%);
     padding: 20px;
     max-width: 800px;
-    margin: 20px 0;
+    margin: auto;
 }
 
 iframe {
