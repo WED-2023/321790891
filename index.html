@@ -233,11 +233,26 @@
     document.addEventListener('DOMContentLoaded', (event) => {
         let likeButton = document.getElementById('like-button');
         let likeCounter = document.getElementById('like-counter');
-        let count = 0;
+
+        // Retrieve the like count from local storage, or initialize to 0 if not present
+        let count = localStorage.getItem('likeCount') ? parseInt(localStorage.getItem('likeCount')) : 0;
+        likeCounter.textContent = count;
+
+        // Check if the like button has been clicked in this session
+        let isLiked = sessionStorage.getItem('isLiked');
+
+        if (isLiked) {
+            likeButton.disabled = true;
+        }
 
         likeButton.addEventListener('click', () => {
-            count++;
-            likeCounter.textContent = count;
+            if (!isLiked) {
+                count++;
+                likeCounter.textContent = count;
+                localStorage.setItem('likeCount', count); // Store the updated like count in local storage
+                sessionStorage.setItem('isLiked', true); // Set the session flag to indicate the button has been clicked
+                likeButton.disabled = true; // Disable the button
+            }
         });
     });
 </script>
