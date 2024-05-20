@@ -62,7 +62,7 @@ h2 {
     margin-top: 0;
     font-size: 3em;
     text-align: center;
-    text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 2px 2px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
     color: white;
     font-weight: bold;
     /* text-shadow: 1px 1px 1px #f08c8c,
@@ -77,7 +77,7 @@ h2 {
     1px 25px 50px rgba(16, 16, 16, 0.2); */
 }
 
-
+/* about section */
 
 .about-content {
     display: flex;
@@ -160,6 +160,8 @@ h2 {
 	to {opacity: 1}
 }
 
+/* photos section */
+
 .slideshow-container {
 	text-align: center;
 	display: -webkit-flex;
@@ -225,7 +227,10 @@ h2 {
 	transform: scale(1.1, 1.1);
 
 }
+
+
 /* like section */
+
 #like-section {
     text-align: center; 
     margin-top: 20px;
@@ -236,7 +241,7 @@ h2 {
     font-size: 18px;
     padding: 10px 20px;
     color: #fff;
-    background-color: #ff6f61;
+    background-color: #f08080;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -245,12 +250,12 @@ h2 {
 }
 
 #like-button:hover {
-    background-color: #ff4b3a;
+    background-color: #f86262;
     transform: scale(1.05);
 }
 
 #like-button:active {
-    background-color: #e6453a;
+    background-color: #db5656;
 }
 
 #like-counter {
@@ -262,8 +267,7 @@ h2 {
     text-align: left;
 }
 
-/* contacy section */
-
+/* contact section */
 
 form {
     display: flex;
@@ -292,6 +296,36 @@ form input, form textarea, form select {
 }
 
 .button-row button {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #f08080;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-row button:hover {
+    background-color: #f86262;
+    transform: scale(1.05);
+}
+
+.button-row button:active{
+    background-color: #db5656;
+}
+
+/* .button-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.button-row button {
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 18px;
     padding: 10px;
@@ -304,7 +338,7 @@ form input, form textarea, form select {
 .button-row button:hover {
     background: lightpink;
     color: white; /* Optional: change text color on hover */
-}
+} */
 
 /* .photo-row {
     display: flex;
@@ -318,8 +352,9 @@ form input, form textarea, form select {
     object-fit: cover; 
 } */
 
+/* playlist section */
 iframe {
     /* width: 90%;  */
-    width: 600px;
+    width: 750px;
     height: 500px; 
 }
