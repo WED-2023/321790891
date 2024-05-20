@@ -138,12 +138,12 @@ h2 {
 /* photos section */
 
 .slideshow-container {
+    margin: auto;
 	text-align: center;
 	display: -webkit-flex;
 	display: flex;
 	width: 800px;
 	height: 450px;
-	margin: auto;
     object-position: center;
 }
 
@@ -314,6 +314,7 @@ form input, form textarea, form select {
 /* playlist section */
 
 .playlist-container {
+    margin: auto;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
@@ -321,7 +322,6 @@ form input, form textarea, form select {
     background: linear-gradient(135deg, #f5f7fa 0%, #e699a6 100%);
     padding: 20px;
     max-width: 800px;
-    margin: auto;
 }
 
 iframe {
