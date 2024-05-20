@@ -35,7 +35,6 @@ header {
     justify-content: space-around;
     align-items: center;
     background: lightcoral;
-    /* padding: 10px 0; */
 }
 
 #menu ul li {
@@ -65,16 +64,6 @@ h2 {
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 2px 2px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
     color: white;
     font-weight: bold;
-    /* text-shadow: 1px 1px 1px #f08c8c,
-    1px 2px 1px #f08c8c,
-    1px 3px 1px #f08c8c,
-    1px 4px 1px #f08c8c,
-    1px 5px 1px #f08c8c,
-    1px 6px 1px #f08c8c,
-    1px 10px 5px rgba(16, 16, 16, 0.5),
-    1px 15px 10px rgba(16, 16, 16, 0.4),
-    1px 20px 30px rgba(16, 16, 16, 0.3),
-    1px 25px 50px rgba(16, 16, 16, 0.2); */
 }
 
 /* about section */
@@ -125,21 +114,6 @@ h2 {
       text-align: center;
     }
 }
-/* .photo-gallery {
-    padding: 60px 20px;
-}
-
-.photo-gallery .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-} */
-
-/* .photo-gallery .grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-} */
 
 /* Fading animation */
 .fade {
@@ -169,7 +143,6 @@ h2 {
 	width: 750px;
 	height: 400px;
 	margin: auto;
-    /* position: relative; */
     object-position: center;
 }
 
@@ -191,7 +164,6 @@ h2 {
 }
 
 
-/* Next & previous buttons */
 .prev, .next 
 {
 	cursor: pointer;
@@ -209,8 +181,6 @@ h2 {
 
 }
 
-
-/* The dots/bullets/indicators */
 .dot {
 	cursor:pointer;
 	height: 15px;
@@ -264,6 +234,11 @@ h2 {
 }
 
 .answers{
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
     text-align: left;
 }
 
@@ -318,44 +293,9 @@ form input, form textarea, form select {
     background-color: #db5656;
 }
 
-/* .button-row {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 400px;
-    margin-top: 20px;
-}
-
-.button-row button {
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 18px;
-    padding: 10px;
-    background: lightcoral;
-    border: none;
-    cursor: pointer;
-    width: 48%;
-}
-
-.button-row button:hover {
-    background: lightpink;
-    color: white; /* Optional: change text color on hover */
-
-
-/* .photo-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px; 
-}
-
-.photo-row img {
-    width: 23%; 
-	height: 275px; 
-    object-fit: cover; 
-} */
 
 /* playlist section */
 iframe {
-    /* width: 90%;  */
     width: 750px;
     height: 500px; 
 }
