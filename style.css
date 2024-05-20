@@ -306,6 +306,7 @@ form input, form textarea, form select {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 48%;
 }
 
 .button-row button:hover {
@@ -338,7 +339,7 @@ form input, form textarea, form select {
 .button-row button:hover {
     background: lightpink;
     color: white; /* Optional: change text color on hover */
-} */
+
 
 /* .photo-row {
     display: flex;
