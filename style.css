@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: "Segoe UI Semilight"; 
     margin: 0;
     padding: 0;
 	background-color: white;
@@ -59,12 +59,13 @@ header {
 }
 
 h2 {
+    font-family: "Segoe UI  Black"; 
     margin-top: 0;
     font-size: 3em;
     text-align: center;
     color: #f08080;
     font-weight: bold;
-    text-shadow: 1px 1px 1px #f08c8c,
+    /* text-shadow: 1px 1px 1px #f08c8c,
     1px 2px 1px #f08c8c,
     1px 3px 1px #f08c8c,
     1px 4px 1px #f08c8c,
@@ -73,7 +74,7 @@ h2 {
     1px 10px 5px rgba(16, 16, 16, 0.5),
     1px 15px 10px rgba(16, 16, 16, 0.4),
     1px 20px 30px rgba(16, 16, 16, 0.3),
-    1px 25px 50px rgba(16, 16, 16, 0.2);
+    1px 25px 50px rgba(16, 16, 16, 0.2); */
 }
 
 
@@ -164,7 +165,7 @@ h2 {
 	display: -webkit-flex;
 	display: flex;
 	width: 750px;
-	height: 350px;
+	height: 400px;
 	margin: auto;
     position: relative;
     object-position: center;
@@ -252,7 +253,7 @@ form input, form textarea, form select {
 }
 
 .button-row button {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Segoe UI Semilight";
     font-size: 18px;
     padding: 10px;
     background: lightcoral;
